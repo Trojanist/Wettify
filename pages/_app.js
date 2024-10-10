@@ -15,6 +15,8 @@ function MyApp({ Component, pageProps }) {
       setCategoriesBarVisible(!isCategoriesBarVisible);
     };
 
+
+    
   return (
     <>
       <Head>
