@@ -26,9 +26,11 @@ function MyApp({ Component, pageProps }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-H903Z618D7');
+              gtag('config', 'G-V0JVFZKP0J');
             `,
             }}
+
+            
           />
       </Head>
       <Navbar toggleCategoriesBar={toggleCategoriesBar} />
