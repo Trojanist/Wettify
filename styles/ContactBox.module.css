@@ -1,0 +1,35 @@
+.contactBox{
+    width: 300px;
+    height: 150px;
+    background: #cd0e5ef3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: #fff;
+}
+
+.contactBoxIcon{
+    width: 50px;
+}
+
+.contactBox h1{
+    font-size: 22px;
+    padding-left: 25px;
+}
+
+.contactBox span{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contactBoxContentParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+}

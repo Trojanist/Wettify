@@ -1,0 +1,193 @@
+.CategoriesList::-webkit-scrollbar {
+  display: none;
+}
+
+.CategoriesBarNavMenu::-webkit-scrollbar {
+  display: none;
+}
+
+.CategoriesBar {
+  width: 180px;
+  height: 77vh;
+  background: #cd0e5e;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 20px;
+  top: 155px;
+  left: -220px;
+  transition: transform 0.3s ease, left 0.3s ease;
+  -webkit-transition: transform 0.3s ease, left 0.3s ease;
+  -moz-transition: transform 0.3s ease, left 0.3s ease;
+  -ms-transition: transform 0.3s ease, left 0.3s ease;
+  -o-transition: transform 0.3s ease, left 0.3s ease;
+  text-align: center;
+}
+
+.CategoriesBar.sticky {
+  transition:all ease 0.3s;
+  top: 2%;
+  height: 97vh;
+  -webkit-transition:all ease 0.3s;
+  -moz-transition:all ease 0.3s;
+  -ms-transition:all ease 0.3s;
+  -o-transition:all ease 0.3s;
+}
+
+.CategoriesBarTitle {
+  font-family: "Acme", sans-serif;
+  background: #303030;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.CategoriesList {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  overflow-y: auto; 
+  margin-top: 20px;
+  scroll-behavior: smooth;
+  width: 100%; 
+}
+
+.CategoriesList a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1); 
+  padding: 8px;
+  border-radius: 10px;
+  transition: text-shadow 0.1s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.CategoriesList a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.Separator {
+  width: 100%;
+  height: 2px;
+  background: #303030;
+  margin: 10px 0; 
+}
+
+.CategoriesBarNavMenu {
+  height: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 5px;
+  width: 100%; 
+  overflow: scroll;
+}
+
+.CategoriesBar.sticky .CategoriesBarNavMenu{
+  height: 100%;
+}
+
+.CategoriesBarNavMenu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.1); 
+  padding: 8px;
+  border-radius: 10px;
+  transition: text-shadow 0.1s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.CategoriesBarNavMenu a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.3); 
+}
+
+.CategoriesBar.hidden {
+  left: -220px;
+  transform: translateX(-100%);
+  display: block; 
+}
+
+.CategoriesBar.visible {
+  left: 10px; 
+  transform: translateX(0); 
+}
+
+
+@media screen and (max-width:500px){
+  .CategoriesBar {
+    width: 95%;
+    height: 100vh;
+    background: #cd0e5e;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-left: 10px;
+    border-radius: 20px;
+    top: 17%;
+    left: -220px;
+    transition: transform 0.3s ease, left 0.3s ease;
+    margin: 0 auto;
+  }
+
+  .CategoriesBarContentBox{
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .CategoriesBarContentBox a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .CategoriesList {
+    width: 100%;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    overflow-y: auto; 
+    margin-top: 20px;
+    scroll-behavior: smooth;
+  }
+
+  .CategoriesList a{
+    font-size: 19px;
+  }
+
+  .CategoriesBarNavMenu {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-bottom: 8px;
+    width: 100%; 
+    overflow: auto;
+  }
+
+  .CategoriesBarNavMenu a {
+    font-size: 19px;
+  }
+
+  .TopCategories a:nth-child(2){
+    display: none;
+  }
+
+  .TopCategories a:nth-child(3){
+    display: none;
+  }
+
+  .TopCategories a:nth-child(4){
+    display: none;
+  }
+
+
+}

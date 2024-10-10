@@ -1,0 +1,221 @@
+.Navbar {
+  background: #303030;
+  height: 140px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.UpperNavbar {
+  background: #cd0e5e;
+  height: 80px;
+  width: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.IconButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.UpperNavbarLeftSide {
+  /* flex: 40%; */
+  width: 500px;
+  max-width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.UpperNavbarLeftSide img {
+  width: 120px;
+  height: 120px;
+}
+
+.LiveCamsCounter {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.LiveCamsCounter span {
+  color: #fff;
+}
+
+.CounterGreenCircle {
+  width: 18px;
+  height: 18px;
+  background: #33ff00;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(1, 255, 1, 0.5);
+}
+
+@keyframes lightOnOff {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(0, 255, 0, 0);
+  }
+}
+
+.LightAnimation {
+  -webkit-animation: lightOnOff 1.5s infinite;
+  animation: lightOnOff 1.5s infinite;
+}
+
+.UpperNavbarRightSide {
+  /* flex: 40%; */
+  width: 400px;
+  max-width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.AdBanner {
+  width: 250px;
+  height: 50px;
+  background: #e62f7b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.DownNavBar {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TopCategories {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.TopCategories a {
+  max-width: 250px;
+  background: #cd0e5e;
+  color: #fff;
+  padding: 7px;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all ease 0.1s;
+  -moz-transition: all ease 0.1s;
+  -ms-transition: all ease 0.1s;
+  -o-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+
+}
+
+.TopCategories a:hover {
+  scale: 1.1;
+  box-shadow: 0 0 10px 5px #cd0e5e;
+}
+
+.TopCategories span {
+  background: #cd0e5e;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:850px){
+  .AdBanner{
+    display: none;
+  }
+
+  .UpperNavbarLeftSide {
+    /* flex: 40%; */
+    width: 700px;
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .UpperNavbarRightSide {
+    /* flex: 40%; */
+    width: 200px;
+    max-width: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width:500px){
+
+  .UpperNavbarRightSide {
+    max-width: 9%;
+    margin-right: 10px;
+  }
+
+  .UpperNavbarLeftSide {
+    /* flex: 40%; */
+    width: 700px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:700px){
+    .TopCategories a:nth-child(4){
+      display: none;
+    }
+
+    .TopCategories a:nth-child(2){
+      display: none;
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+  .TopCategories a:nth-child(3){
+    display: none;
+  }
+
+}
