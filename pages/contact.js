@@ -10,6 +10,7 @@ const Contact = () => {
       <Helmet>
       <meta charSet="utf-8" />
         <title>Contact | Wettify.com</title>
+        <meta property="title" content="Contact | Wettify.com" />
         <meta property="og:title" content="Contact | Wettify.com" />
         <link rel="canonical" href="https://wettify.com/contact" />
         <meta name="robots" content="index, follow" />

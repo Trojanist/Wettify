@@ -5,6 +5,7 @@ import Link from "next/link";const Squirt = ({isContentWide}) => {
     <div>
       <Helmet>
         <title>Live squirt cam | Wettify</title>
+        <meta property="title" content="Live squirt cam | Wettify" />
         <meta property="og:title" content="Live squirt cam | Wettify" />
         <meta
           property="og:description"

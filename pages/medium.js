@@ -6,6 +6,10 @@ import Link from "next/link";const Medium = ({isContentWide}) => {
       <Helmet>
         <title>Medium naked ladies on webcam | Wettify</title>
         <meta
+          property="title"
+          content="Medium naked ladies on webcam | Wettify"
+        />
+        <meta
           property="og:title"
           content="Medium naked ladies on webcam | Wettify"
         />

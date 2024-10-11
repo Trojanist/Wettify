@@ -5,6 +5,7 @@ const CamToCam = ({ isContentWide }) => {
     <div className="CamToCam">
       <Helmet>
         <title>Cam To Cam | Wettify</title>
+        <meta property="title" content="Cam Teens | Wettify" />
         <meta property="og:title" content="Cam Teens | Wettify" />
         <meta
           property="og:description"

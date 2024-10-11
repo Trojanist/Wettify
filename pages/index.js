@@ -8,6 +8,10 @@ const Home = ({ isContentWide }) => {
       <Helmet>
         <title>Adult live cam and naked girls | wettify</title>
         <meta
+          property="title"
+          content="Adult live cam and naked girls | wettify"
+        />
+        <meta
           property="og:title"
           content="Adult live cam and naked girls | wettify"
         />

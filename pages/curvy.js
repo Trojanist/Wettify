@@ -5,6 +5,7 @@ import Link from "next/link";const Curvy = ({isContentWide}) => {
     <div>
       <Helmet>
         <title>curvy women nude | Wettify</title>
+        <meta property="title" content="curvy women nude | Wettify" />
         <meta property="og:title" content="curvy women nude | Wettify" />
         <meta
           property="og:description"

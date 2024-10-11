@@ -5,6 +5,7 @@ const RandomCamRoom = ({ isContentWide }) => {
     <div className="RandomCamRoom">
       <Helmet>
         <title>Random Cam Room | Wettify</title>
+        <meta property="title" content="Cam Teens | Wettify" />
         <meta property="og:title" content="Cam Teens | Wettify" />
         <meta
           property="og:description"

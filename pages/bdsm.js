@@ -7,6 +7,7 @@ const BDSM = ({isContentWide}) => {
     <div>
       <Helmet>
         <title>bondage naked women | Wettify</title>
+        <meta property="title" content="bondage naked women | Wettify" />
         <meta property="og:title" content="bondage naked women | Wettify" />
         <meta
           property="og:description"

@@ -7,6 +7,10 @@ const Asian = ({isContentWide}) => {
       <Helmet>
         <title>beautiful naked women asian | Wettify</title>
         <meta
+          property="title"
+          content="beautiful naked women asian | Wettify"
+        />
+        <meta
           property="og:title"
           content="beautiful naked women asian | Wettify"
         />

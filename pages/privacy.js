@@ -5,7 +5,10 @@ const Privacy = () => {
     <div>
       <Helmet>
         <title>Privacy Policy | Wettify</title>
-        <meta name="description" content="This is a description of my page" />
+        <meta property="title" content="Privacy Policy | Wettify" />
+        <meta property="og:title" content="Privacy Policy | Wettify" />
+        <meta name="description" content="View our privacy policy" />
+        <meta name="og:description" content="View our privacy policy" />
       </Helmet>
       <p>Privacy</p>
     </div>

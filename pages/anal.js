@@ -6,6 +6,7 @@ const Anal = ({isContentWide}) => {
     <div>
       <Helmet>
         <title>Adult live Anal cam | Wettify</title>
+        <meta property="title" content="Adult live Anal cam | Wettify" />
         <meta property="og:title" content="Adult live Anal cam | Wettify" />
         <meta
           property="og:description"

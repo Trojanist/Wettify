@@ -6,6 +6,7 @@ const Latina = ({isContentWide}) => {
     <div>
       <Helmet>
         <title>sexy naked latinas | Wettify</title>
+        <meta property="title" content="sexy naked latinas | Wettify" />
         <meta property="og:title" content="sexy naked latinas | Wettify" />
         <meta
           property="og:description"

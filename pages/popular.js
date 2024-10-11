@@ -5,6 +5,7 @@ const Popular = ({ isContentWide }) => {
     <div className="PopularsCategory">
       <Helmet>
         <title>Hot redheads naked | Wettify</title>
+        <meta property="title" content="Popular Cam Girls | Free Live Camgirls - Chat with Top Live Cam Girls | Wettify" />
         <meta property="og:title" content="Popular Cam Girls | Free Live Camgirls - Chat with Top Live Cam Girls | Wettify" />
         <meta
           property="og:description"

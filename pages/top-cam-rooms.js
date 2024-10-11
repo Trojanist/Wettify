@@ -5,7 +5,8 @@ const TopCamRooms = ({ isContentWide }) => {
     <div className="TopCamRooms">
       <Helmet>
         <title>Top Cam Rooms | Wettify</title>
-        <meta property="og:title" content="Cam Teens | Wettify" />
+        <meta property="title" content="Top Cam Rooms | Wettify" />
+        <meta property="og:title" content="Top Cam Rooms | Wettify" />
         <meta
           property="og:description"
           content="Explore live teen sex cams with the hottest cam teens. Join teencams for free and enjoy real-time chat with beautiful young models on live sex cams now!"

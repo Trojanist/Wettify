@@ -6,6 +6,7 @@ const FreeRooms = ({ isContentWide }) => {
     <div className="FreeRooms">
       <Helmet>
         <title>Free Rooms | Wettify</title>
+        <meta property="title" content="Cam Teens | Wettify" />
         <meta property="og:title" content="Cam Teens | Wettify" />
         <meta
           property="og:description"

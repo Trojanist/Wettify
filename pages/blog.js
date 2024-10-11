@@ -5,7 +5,16 @@ const Blog = () => {
     <div>
       <Helmet>
         <title>Blog | Wettify</title>
-        <meta name="description" content="This is a description of my page" />
+        <meta property="title" content="Blog | Wettify" />
+        <meta property="og:title" content="Blog | Wettify" />
+        <meta
+          property="og:description"
+          content="Explore our blog"
+        />
+        <meta
+          name="description"
+          content="Explore our blog"
+        ></meta>
       </Helmet>
       <p>Blog</p>
     </div>
