@@ -13,7 +13,7 @@ const Terms = ({isContentWide}) => {
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <h1>Terms and Conditions</h1>
-      <p>
+      <p className="PageTextContent">
         <b>1.Acceptance of Terms</b><br />
         By accessing and using Wettify.com, you agree to comply with these Terms and Conditions and all applicable laws. If you do not agree, you must not use this website.<br />
         <b>2. Age Requirement</b><br />

@@ -13,7 +13,7 @@ const Privacy = ({isContentWide}) => {
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <h1>Privacy Policy</h1>
-        <p>
+        <p className="PageTextContent">
           <b>1. Introduction</b><br />
           Wettify.com values your privacy. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you visit our website.<br />
           <b>2. Information We Collect</b><br />
