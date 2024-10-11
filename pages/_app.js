@@ -4,12 +4,30 @@ import { useRouter } from 'next/router'; // Import useRouter from Next.js
 import Navbar from '../components/Navbar'
 import CategoriesBar from '../components/CategoriesBar'
 import '../styles/global.css'
-
+import { useEffect } from 'react';
 function MyApp({ Component, pageProps }) {
 
     const router = useRouter(); // Use the router hook to get router object
   
     const [isCategoriesBarVisible, setCategoriesBarVisible] = useState(true);
+
+      useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 850) {
+        setCategoriesBarVisible(false);
+      } else {
+        setCategoriesBarVisible(true);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
     const toggleCategoriesBar = () => {
       setCategoriesBarVisible(!isCategoriesBarVisible);
