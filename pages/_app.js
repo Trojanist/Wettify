@@ -5,6 +5,8 @@ import Navbar from '../components/Navbar'
 import CategoriesBar from '../components/CategoriesBar'
 import '../styles/global.css'
 import { useEffect } from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 function MyApp({ Component, pageProps }) {
 
     const router = useRouter(); // Use the router hook to get router object
@@ -53,6 +55,7 @@ function MyApp({ Component, pageProps }) {
           />
       </Head>
       <Navbar toggleCategoriesBar={toggleCategoriesBar} />
+      <SpeedInsights />
       <CategoriesBar isVisible={isCategoriesBarVisible} />
       <Component {...pageProps}
               isContentWide={!isCategoriesBarVisible}
