@@ -17,7 +17,7 @@ const RandomCamRoom = ({ isContentWide }) => {
         ></meta>
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
-      <iframe src="https://cbxyz.com/in/?tour=gLDS&campaign=ccOiu&track=embed&signup_notice=1&disable_sound=1&mobileRedirect=never" width="20%" height="500px" frameborder="0" class="code" scrolling="no" className="RandomCamIframe"></iframe>
+      <iframe src="https://cbxyz.com/in/?tour=gLDS&campaign=ccOiu&track=embed&signup_notice=1&disable_sound=1&mobileRedirect=never" width="20%" height="500px" frameborder="0" className="RandomCamIframe"></iframe>
       </div>
     </div>
   );
