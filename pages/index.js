@@ -26,7 +26,6 @@ const Home = ({ isContentWide }) => {
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? "Wide" : ""}`}>
       <p className="PageTextContent">
-
           Welcome to Wettify.com – Your Ultimate Destination for Cam Girls!
           <br />
           Discover the World of Live Cam Girls
