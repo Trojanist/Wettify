@@ -25,6 +25,7 @@ const Home = ({ isContentWide }) => {
         ></meta>
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? "Wide" : ""}`}>
+      <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=x" className="rubateFeedIframe"></iframe>
       <p className="PageTextContent">
           Welcome to Wettify.com – Your Ultimate Destination for Cam Girls!
           <br />
