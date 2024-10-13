@@ -1,11 +1,11 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";
-import {View, Text} from 'react-native';
+import CategoryContent from "../components/CategoryContent";
 
 const Home = ({ isContentWide }) => {
   return (
-    <View>
+    <div>
       <Helmet>
         <title>Adult live cam and naked girls | Wettify</title>
         <meta
@@ -25,9 +25,9 @@ const Home = ({ isContentWide }) => {
           content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you"
         ></meta>
       </Helmet>
-      <View className={`CategoryContent ${isContentWide ? "Wide" : ""}`}>
+      <CategoryContent>
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=x" className="rubateFeedIframe"></iframe>
-      <Text className="PageTextContent" defer>
+      <p className="PageTextContent" defer>
           Welcome to Wettify.com – Your Ultimate Destination for Cam Girls!
           <br />
           Discover the World of Live Cam Girls
@@ -84,9 +84,9 @@ const Home = ({ isContentWide }) => {
           with Wettify.com. Our platform is designed to cater to your desires,
           ensuring a seamless and enjoyable experience. Sign up today and start
           exploring the best in live cam entertainment.
-      </Text>
-      </View>
-    </View>
+          </p>
+      </CategoryContent>
+    </div>
   );
 };
 
