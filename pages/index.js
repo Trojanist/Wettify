@@ -1,6 +1,8 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";
+import {View, Text} from 'react-native';
+
 const Home = ({ isContentWide }) => {
   return (
     <View>
