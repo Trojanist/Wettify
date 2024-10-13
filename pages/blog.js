@@ -15,7 +15,6 @@ const Blog = () => {
           name="description"
           content="Explore our blog"
         ></meta>
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <p>Blog</p>
     </div>

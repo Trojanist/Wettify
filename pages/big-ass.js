@@ -15,7 +15,6 @@ import Link from "next/link";const BigAss = ({isContentWide}) => {
           name="description"
           content="Watch the hottest big assnaked live cam shows on Stripchat! Enjoybig ass sex cams with real-time action from stunning models. Join now for exclusive anal bigass live cams!"
         ></meta>
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=bigass" className="rubateFeedIframe"></iframe>

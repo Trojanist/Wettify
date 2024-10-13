@@ -16,7 +16,6 @@ const Latina = ({isContentWide}) => {
           name="description"
           content="Watch sexy naked Latinas live! Our stripping Latina performers are ready for free strip chat and live nudes"
         ></meta>
-        <meta name="robots" content="index, follow" />
       </Helmet>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=latina" className="rubateFeedIframe"></iframe>

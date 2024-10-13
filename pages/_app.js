@@ -51,6 +51,7 @@ function MyApp({ Component, pageProps }) {
             `,
             }}
           />
+        <meta name="robots" content="index, follow" />
       </Head>
       <Navbar toggleCategoriesBar={toggleCategoriesBar} />
       <SpeedInsights />

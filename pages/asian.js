@@ -22,7 +22,6 @@ const Asian = ({isContentWide}) => {
           name="description"
           content="Join the excitement on Asian stripchat with live cams featuring sexy Asian nudes women. Enjoy beautiful naked women Asian and sexy Asian naked babes in thrilling live sessions."
         ></meta>
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=asian" className="rubateFeedIframe"></iframe>

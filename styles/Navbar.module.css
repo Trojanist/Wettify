@@ -34,9 +34,20 @@
   margin-left: 50px;
 }
 
+.LogoBox{
+  width: 350px;
+}
+
+.LogoBox img {
+  width: 65px;
+  height: 65px;
+  margin-top: 10px;
+}
+
 .UpperNavbarLeftSide img {
-  width: 120px;
-  height: 120px;
+  width: 65px;
+  height: 65px;
+  margin-top: 10px;
 }
 
 .LiveCamsCounter {
@@ -87,7 +98,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
 }
 
 .AdBanner {
@@ -162,7 +172,7 @@
   .UpperNavbarLeftSide {
     /* flex: 40%; */
     width: 700px;
-    max-width: 70%;
+    max-width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -170,15 +180,18 @@
     margin-left: 20px;
   }
 
-  .UpperNavbarRightSide {
-    /* flex: 40%; */
-    width: 200px;
-    max-width: 6%;
+  .LogoBox{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
+    justify-content: flex-end;
+  }
+
+  .LogoBox img{
+    margin-right: 10px;
+  }
+
+  .UpperNavbarRightSide {
+    display: none;
   }
 }
 
@@ -190,14 +203,22 @@
   }
 
   .UpperNavbarLeftSide {
-    /* flex: 40%; */
     width: 700px;
-    max-width: 80%;
+    max-width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-left: 10px;
+  }
+
+  .UpperNavbarLeftSide img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .UpperNavbarRightSide{
+    display: none;
   }
 }
 

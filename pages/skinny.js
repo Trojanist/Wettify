@@ -15,7 +15,6 @@ import Link from "next/link";const Skinny = ({isContentWide}) => {
           name="description"
           content="Explore live cam shows with skinny nudes. Our tiny women naked are ready to perform and chat, offering you the ultimate in adult entertainment"
         ></meta>
-        <meta name="robots" content="index, follow" />
       </Helmet>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=skinny" className="rubateFeedIframe"></iframe>

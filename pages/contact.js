@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import ContactBox from "../components/ContactBox";
 import styles from "../styles/Contact.module.css";
-import Logo from "../public/wettify-logo.png"
+import Logo from "../public/wettify-logo.webp"
 
 const Contact = () => {
   return (
@@ -13,7 +13,6 @@ const Contact = () => {
         <meta property="title" content="Contact | Wettify" />
         <meta property="og:title" content="Contact | Wettify" />
         <link rel="canonical" href="https://wettify.com/contact" />
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={styles.contact}>
       <div className={styles.contactOptions}>

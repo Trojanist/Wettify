@@ -10,7 +10,6 @@ const Privacy = ({isContentWide}) => {
         <meta property="og:title" content="Privacy Policy | Wettify" />
         <meta name="description" content="View our privacy policy" />
         <meta name="og:description" content="View our privacy policy" />
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <h1>Privacy Policy</h1>

@@ -15,7 +15,6 @@ const Popular = ({ isContentWide }) => {
           name="description"
           content="Discover the most popular cam girls on Wettify. Enjoy live chat with beautiful live cam girls for free. Explore top-rated free camgirls streaming in real-time. Join now!"
         ></meta>
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? "Wide" : ""}`}>
         <iframe

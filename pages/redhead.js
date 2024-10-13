@@ -15,7 +15,6 @@ import Link from "next/link";const Redhead = ({isContentWide}) => {
           name="description"
           content="Discover the hottest redhead cam shows with sexy naked redheads on live cams. Join now to watch stunning redhead camgirls live, streaming just for you"
         ></meta>
-        <meta name="robots" content="index, follow" />
       </Helmet>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=redhead" className="rubateFeedIframe"></iframe>

@@ -23,7 +23,6 @@ const Home = ({ isContentWide }) => {
           name="description"
           content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you"
         ></meta>
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? "Wide" : ""}`}>
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=x" className="rubateFeedIframe"></iframe>

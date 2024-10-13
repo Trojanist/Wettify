@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../styles/ContactBox.module.css"
 import Image from 'next/image'
-import Logo from '../public/wettify-logo.png'
+import Logo from '../public/wettify-logo.webp'
 function ContactBox({title, icon, content}) {
   return (
     <div className={styles.contactBox}>
