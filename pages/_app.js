@@ -1,19 +1,15 @@
-import Head from 'next/head';
-import { useState } from 'react';
-import { useRouter } from 'next/router'; // Import useRouter from Next.js
-import Navbar from '../components/Navbar'
-import CategoriesBar from '../components/CategoriesBar'
-import '../styles/global.css'
-import { useEffect } from 'react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import Head from "next/head";
+import { useState, useEffect } from "react";
+import Navbar from "../components/Navbar";
+import CategoriesBar from "../components/CategoriesBar";
+import "../styles/global.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function MyApp({ Component, pageProps }) {
 
-    const router = useRouter(); // Use the router hook to get router object
-  
-    const [isCategoriesBarVisible, setCategoriesBarVisible] = useState(true);
+  const [isCategoriesBarVisible, setCategoriesBarVisible] = useState(true);
 
-      useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 850) {
         setCategoriesBarVisible(false);
@@ -21,6 +17,8 @@ function MyApp({ Component, pageProps }) {
         setCategoriesBarVisible(true);
       }
     };
+
+    document.getElementById("__next").id = "wettify-wrapper";
 
     handleResize();
 
@@ -31,35 +29,34 @@ function MyApp({ Component, pageProps }) {
     };
   }, []);
 
-    const toggleCategoriesBar = () => {
-      setCategoriesBarVisible(!isCategoriesBarVisible);
-    };
+  const toggleCategoriesBar = () => {
+    setCategoriesBarVisible(!isCategoriesBarVisible);
+  };
 
-
-    
   return (
     <>
       <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0JVFZKP0J"></script>
         <script
-            dangerouslySetInnerHTML={{
-              __html: `
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-V0JVFZKP0J"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-V0JVFZKP0J');
             `,
-            }}
-          />
+          }}
+        />
         <meta name="robots" content="index, follow" />
       </Head>
       <Navbar toggleCategoriesBar={toggleCategoriesBar} />
       <SpeedInsights />
       <CategoriesBar isVisible={isCategoriesBarVisible} />
-      <Component {...pageProps}
-              isContentWide={!isCategoriesBarVisible}
-      />
-      </>
+      <Component {...pageProps} isContentWide={!isCategoriesBarVisible} />
+    </>
   );
 }
 

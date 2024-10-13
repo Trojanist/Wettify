@@ -1,39 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import CategoriesJson from '../public/data/categories.json'
-import styles from '../styles/CategoriesBar.module.css'
+import CategoriesJson from '../public/data/categories.json';
+import styles from '../styles/CategoriesBar.module.css';
+import { debounce } from 'lodash'; // import lodash for debounce
 
 const CategoriesBar = ({ isVisible }) => {
-  const [categories, setCategories] = useState([]);
-  const [error, setError] = useState(null);
+  const [categories] = useState(CategoriesJson); // Directly use the imported JSON
+  const [error] = useState(null); // Error handling can be omitted unless needed
   const [isSticky, setIsSticky] = useState(false);
 
+  const handleScroll = useCallback(debounce(() => {
+    if (window.scrollY > 140) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  }, 10), []); // Debounce scroll event
+
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const categories = await Promise.resolve(CategoriesJson);
-        setCategories(categories);
-      } catch (error) {
-        setError(error.message);
-      }
-    };
-
-    fetchData();
-
-    const handleScroll = () => {
-      if (window.scrollY > 140) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -45,13 +35,14 @@ const CategoriesBar = ({ isVisible }) => {
         <span className={styles.CategoriesBarTitle}>All Categories</span>
         <div className={styles.CategoriesList}>
           {categories.map((category, key) => (
-            <Link className={styles.CategoryItem} href={category.CategoryPath} key={key}>{category.title}</Link>
+            <Link className={styles.CategoryItem} href={category.CategoryPath} key={key}>
+              {category.title}
+            </Link>
           ))}
         </div>
         <div className={styles.Separator}></div>
         <div className={styles.CategoriesBarNavMenu}>
           <Link href="/contact">Contact</Link>
-          {/* <Link href="/blog">Blog</Link> */}
           <Link href="/about">About</Link>
         </div>
       </div>

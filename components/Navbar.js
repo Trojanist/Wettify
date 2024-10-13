@@ -5,6 +5,7 @@ import Logo from '../public/wettify-logo.webp'
 import Link from "next/link";
 import styles from '../styles/Navbar.module.css'
 import Image from "next/image";
+
 const Navbar = ({toggleCategoriesBar} ) => {
 
   return (

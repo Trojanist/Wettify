@@ -1,9 +1,7 @@
-.CategoriesList::-webkit-scrollbar {
-  display: none;
-}
+/* Global scrollbar removal */
 
-.CategoriesBarNavMenu::-webkit-scrollbar {
-  display: none;
+.CategoriesBar, .CategoriesList, .CategoriesBarNavMenu {
+  scrollbar-width: none; /* Firefox */
 }
 
 .CategoriesBar {
@@ -18,21 +16,13 @@
   top: 155px;
   left: -220px;
   transition: transform 0.3s ease, left 0.3s ease;
-  -webkit-transition: transform 0.3s ease, left 0.3s ease;
-  -moz-transition: transform 0.3s ease, left 0.3s ease;
-  -ms-transition: transform 0.3s ease, left 0.3s ease;
-  -o-transition: transform 0.3s ease, left 0.3s ease;
   text-align: center;
 }
 
 .CategoriesBar.sticky {
-  transition:all ease 0.3s;
   top: 2%;
   height: 97vh;
-  -webkit-transition:all ease 0.3s;
-  -moz-transition:all ease 0.3s;
-  -ms-transition:all ease 0.3s;
-  -o-transition:all ease 0.3s;
+  transition: all 0.3s ease;
 }
 
 .CategoriesBarTitle {
@@ -85,10 +75,10 @@
   gap: 3px;
   margin-bottom: 5px;
   width: 100%; 
-  overflow: scroll;
+  overflow: auto;
 }
 
-.CategoriesBar.sticky .CategoriesBarNavMenu{
+.CategoriesBar.sticky .CategoriesBarNavMenu {
   height: 100%;
 }
 
@@ -118,76 +108,40 @@
   transform: translateX(0); 
 }
 
-
-@media screen and (max-width:500px){
+/* Media query for mobile optimization */
+@media screen and (max-width: 500px) {
   .CategoriesBar {
     width: 95%;
     height: 100vh;
-    background: #cd0e5e;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-    margin-left: 10px;
-    border-radius: 20px;
     top: 17%;
     left: -220px;
-    transition: transform 0.3s ease, left 0.3s ease;
     margin: 0 auto;
   }
 
-  .CategoriesBarContentBox{
+  .CategoriesBarContentBox {
     width: 90%;
     font-size: 20px;
   }
 
-  .CategoriesBarContentBox a{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
   .CategoriesList {
-    width: 100%;
     height: 55vh;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     gap: 10px;
-    overflow-y: auto; 
-    margin-top: 20px;
-    scroll-behavior: smooth;
   }
 
-  .CategoriesList a{
+  .CategoriesList a {
     font-size: 19px;
   }
 
   .CategoriesBarNavMenu {
     height: 10vh;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     gap: 10px;
-    margin-bottom: 8px;
-    width: 100%; 
-    overflow: auto;
   }
 
   .CategoriesBarNavMenu a {
     font-size: 19px;
   }
-
-  .TopCategories a:nth-child(2){
-    display: none;
-  }
-
-  .TopCategories a:nth-child(3){
-    display: none;
-  }
-
-  .TopCategories a:nth-child(4){
-    display: none;
-  }
-
-
 }

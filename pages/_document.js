@@ -9,13 +9,10 @@ export default function Document() {
         <meta property="og:description" content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you" />
         <link rel="canonical" href="https://wettify.com" />
       </Head>
-      <div>
-        {/* Main application content will be rendered here */}
-        <Main />
-        
-        {/* Next.js script tags for hydration and other client-side functionality */}
-        <NextScript />
-      </div>
+      <body>
+          <Main />
+          <NextScript />
+      </body>
     </Html>
   );
 }
