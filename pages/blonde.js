@@ -15,6 +15,7 @@ import Link from "next/link";const Blonde = ({isContentWide}) => {
           name="description"
           content="Explore the allure of nude brunette beauties, featuring pretty naked brunettes and intimate moments. Discover the world of sex with a brunette and captivating naked women brunettes."
         ></meta>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=blonde" className="rubateFeedIframe"></iframe>

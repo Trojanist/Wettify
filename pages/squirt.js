@@ -15,6 +15,7 @@ import Link from "next/link";const Squirt = ({isContentWide}) => {
           name="description"
           content="Explore the best live squirt cam action with naked squirt shows and free squirt cams. Join Squirtchat for real-time squirt online sessions featuring girls squirting live!"
         ></meta>
+        <meta name="robots" content="index, follow" />
       </Helmet>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=squirt" className="rubateFeedIframe"></iframe>

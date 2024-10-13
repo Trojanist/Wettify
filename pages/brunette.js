@@ -15,6 +15,7 @@ import Link from "next/link";const Brunette = ({isContentWide}) => {
           name="description"
           content="Watch naked brunette teen's live! Our stripping brunette beauties nude free strip chat and live nudes"
         ></meta>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=brunette" className="rubateFeedIframe"></iframe>

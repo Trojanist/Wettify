@@ -50,8 +50,6 @@ function MyApp({ Component, pageProps }) {
                 gtag('config', 'G-V0JVFZKP0J');
             `,
             }}
-
-            
           />
       </Head>
       <Navbar toggleCategoriesBar={toggleCategoriesBar} />

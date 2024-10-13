@@ -15,6 +15,7 @@ import Link from "next/link";const Mature = ({isContentWide}) => {
           name="description"
           content="Experience live sex with mature women on mature stripchat and Chaturbate. Enjoy real-time live mature cams featuring experienced, seductive cam models just for you!"
         ></meta>
+        <meta name="robots" content="index, follow" />
       </Helmet>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=mature" className="rubateFeedIframe"></iframe>

@@ -15,6 +15,7 @@ const About = () => {
           name="description"
           content="Read and explore about us"
         ></meta>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <p>About</p>
     </div>

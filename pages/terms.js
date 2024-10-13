@@ -10,6 +10,7 @@ const Terms = ({isContentWide}) => {
         <meta property="og:title" content="Terms & Conditions | Wettify" />
         <meta name="description" content="View our terms and conditions" />
         <meta name="og:description" content="View our terms and conditions" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <h1>Terms and Conditions</h1>

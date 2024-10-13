@@ -9,9 +9,9 @@ const Contact = () => {
     <div>
       <Helmet>
       <meta charSet="utf-8" />
-        <title>Contact | Wettify.com</title>
-        <meta property="title" content="Contact | Wettify.com" />
-        <meta property="og:title" content="Contact | Wettify.com" />
+        <title>Contact | Wettify</title>
+        <meta property="title" content="Contact | Wettify" />
+        <meta property="og:title" content="Contact | Wettify" />
         <link rel="canonical" href="https://wettify.com/contact" />
         <meta name="robots" content="index, follow" />
       </Helmet>

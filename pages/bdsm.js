@@ -17,6 +17,7 @@ const BDSM = ({isContentWide}) => {
           name="description"
           content="Discover the live bdsm cams shows with boundage teens on live cams. Join now to watch bdsm girls live, streaming just for you"
         ></meta>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=bdsm" className="rubateFeedIframe"></iframe>

@@ -21,6 +21,7 @@ import Link from "next/link";const Medium = ({isContentWide}) => {
           name="description"
           content="Join our site to watch medium nude boobs on live naked cams. Enjoy real-time interactions with naked ladies on webcam and have an unforgettable time."
         ></meta>
+        <meta name="robots" content="index, follow" />
       </Helmet>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=milf" className="rubateFeedIframe"></iframe>

@@ -15,6 +15,7 @@ import Link from "next/link";const BBW = ({isContentWide}) => {
           name="description"
           content="Join our live BBW cams for the best adult entertainment. Watch and chat with curvy models in real-time on Stripchat. Enjoy free BBW cam to cam shows now"
         ></meta>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=bbw" className="rubateFeedIframe"></iframe>
