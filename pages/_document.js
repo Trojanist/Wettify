@@ -1,17 +1,16 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="description" content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you" />
-        <meta property="og:title" content="Adult live cam and naked girls | wettify" />
-        <meta property="og:description" content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you" />
-        <link rel="canonical" href="https://wettify.com" />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-          <Main />
-          <NextScript />
+        <Main />
+        <NextScript />
       </body>
     </Html>
   );
