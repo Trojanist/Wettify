@@ -1,9 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Link from "next/link";const Blonde = ({isContentWide}) => {
+import Head from "next/head";
+import Link from "next/link";
+
+const Blonde = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>blonde ladies naked | Wettify</title>
         <meta property="title" content="blonde ladies naked | Wettify" />
         <meta property="og:title" content="blonde ladies naked | Wettify" />
@@ -15,7 +17,7 @@ import Link from "next/link";const Blonde = ({isContentWide}) => {
           name="description"
           content="Explore the allure of nude brunette beauties, featuring pretty naked brunettes and intimate moments. Discover the world of sex with a brunette and captivating naked women brunettes."
         ></meta>
-      </Helmet>
+      </Head>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=blonde" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

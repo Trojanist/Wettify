@@ -36,10 +36,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-V0JVFZKP0J"
-        ></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0JVFZKP0J" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -51,6 +48,7 @@ function MyApp({ Component, pageProps }) {
           }}
         />
         <meta name="robots" content="index, follow" />
+        <meta name="description" content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you" />
       </Head>
       <Navbar toggleCategoriesBar={toggleCategoriesBar} />
       <SpeedInsights />

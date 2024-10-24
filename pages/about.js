@@ -1,9 +1,10 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
+
 const About = () => {
   return (
     <div className="About">
-      <Helmet>
+      <Head>
         <title>About Us | Wettify</title>
         <meta property="title" content="About Us | Wettify" />
         <meta property="og:title" content="About Us | Wettify" />
@@ -15,7 +16,7 @@ const About = () => {
           name="description"
           content="Read and explore about us"
         ></meta>
-      </Helmet>
+      </Head>
       <p>About</p>
     </div>
   );

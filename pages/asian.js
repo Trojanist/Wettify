@@ -1,10 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Link from "next/link";
+
 const Asian = ({isContentWide}) => {
   return (
     <div className="Asian">
-      <Helmet>
+      <Head>
         <title>beautiful naked women asian | Wettify</title>
         <meta
           property="title"
@@ -22,7 +23,7 @@ const Asian = ({isContentWide}) => {
           name="description"
           content="Join the excitement on Asian stripchat with live cams featuring sexy Asian nudes women. Enjoy beautiful naked women Asian and sexy Asian naked babes in thrilling live sessions."
         ></meta>
-      </Helmet>
+      </Head>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=asian" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

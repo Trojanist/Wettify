@@ -1,10 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Link from "next/link";
+import Head from "next/head";
+
 const Latina = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>sexy naked latinas | Wettify</title>
         <meta property="title" content="sexy naked latinas | Wettify" />
         <meta property="og:title" content="sexy naked latinas | Wettify" />
@@ -16,7 +17,7 @@ const Latina = ({isContentWide}) => {
           name="description"
           content="Watch sexy naked Latinas live! Our stripping Latina performers are ready for free strip chat and live nudes"
         ></meta>
-      </Helmet>
+      </Head>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=latina" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

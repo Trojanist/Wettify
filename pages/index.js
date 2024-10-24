@@ -1,12 +1,12 @@
 
 import React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import CategoryContent from "../components/CategoryContent";
 
 const Home = ({ isContentWide }) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>Adult live cam and naked girls | Wettify</title>
         <meta
           property="title"
@@ -24,7 +24,7 @@ const Home = ({ isContentWide }) => {
           name="description"
           content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you"
         ></meta>
-      </Helmet>
+      </Head>
       <CategoryContent>
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=x" className="rubateFeedIframe"></iframe>
       <p className="PageTextContent" defer>

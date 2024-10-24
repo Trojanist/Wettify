@@ -1,9 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Link from "next/link";const Medium = ({isContentWide}) => {
+import Head from "next/head";
+import Link from "next/link";
+
+const Medium = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>Medium naked ladies on webcam | Wettify</title>
         <meta
           property="title"
@@ -21,7 +23,7 @@ import Link from "next/link";const Medium = ({isContentWide}) => {
           name="description"
           content="Join our site to watch medium nude boobs on live naked cams. Enjoy real-time interactions with naked ladies on webcam and have an unforgettable time."
         ></meta>
-      </Helmet>
+      </Head>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=milf" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

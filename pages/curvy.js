@@ -1,9 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Link from "next/link";const Curvy = ({isContentWide}) => {
+import Head from "next/head";
+import Link from "next/link";
+
+const Curvy = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>curvy women nude | Wettify</title>
         <meta property="title" content="curvy women nude | Wettify" />
         <meta property="og:title" content="curvy women nude | Wettify" />
@@ -15,7 +17,7 @@ import Link from "next/link";const Curvy = ({isContentWide}) => {
           name="description"
           content="Explore the sexiest curvy women nude on live cams. Watch thick ladies and curvy chicks naked, showing off their stunning bodies in exclusive live shows just for you"
         ></meta>
-      </Helmet>
+      </Head>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=curvy" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

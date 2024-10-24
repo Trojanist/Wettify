@@ -1,9 +1,9 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Link from "next/link";const Squirt = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>Live squirt cam | Wettify</title>
         <meta property="title" content="Live squirt cam | Wettify" />
         <meta property="og:title" content="Live squirt cam | Wettify" />
@@ -15,7 +15,7 @@ import Link from "next/link";const Squirt = ({isContentWide}) => {
           name="description"
           content="Explore the best live squirt cam action with naked squirt shows and free squirt cams. Join Squirtchat for real-time squirt online sessions featuring girls squirting live!"
         ></meta>
-      </Helmet>
+      </Head>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=squirt" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

@@ -1,9 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Link from "next/link";const BBW = ({isContentWide}) => {
+import Head from "next/head";
+import Link from "next/link";
+
+const BBW = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>Live BBW Cams | Wettify</title>
         <meta property="title" content="Live BBW Cams | Wettify" />
         <meta property="og:title" content="Live BBW Cams | Wettify" />
@@ -15,7 +17,7 @@ import Link from "next/link";const BBW = ({isContentWide}) => {
           name="description"
           content="Join our live BBW cams for the best adult entertainment. Watch and chat with curvy models in real-time on Stripchat. Enjoy free BBW cam to cam shows now"
         ></meta>
-      </Helmet>
+      </Head>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=bbw" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

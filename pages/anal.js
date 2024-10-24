@@ -1,6 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Head from "next/head";
+
 const Anal = ({isContentWide}) => {
   return (
     <div>

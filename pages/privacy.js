@@ -1,16 +1,16 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 
 const Privacy = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>Privacy Policy | Wettify</title>
         <meta property="title" content="Privacy Policy | Wettify" />
         <meta property="og:title" content="Privacy Policy | Wettify" />
         <meta name="description" content="View our privacy policy" />
         <meta name="og:description" content="View our privacy policy" />
-      </Helmet>
+      </Head>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <h1>Privacy Policy</h1>
         <p className="PageTextContent">

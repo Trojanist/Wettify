@@ -1,9 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Link from "next/link";const Lesbian = ({isContentWide}) => {
+import Head from "next/head";
+import Link from "next/link";
+
+const Lesbian = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>lesbian live cam | Wettify</title>
         <meta property="title" content="lesbian live cam | Wettify" />
         <meta property="og:title" content="lesbian live cam | Wettify" />
@@ -15,7 +17,7 @@ import Link from "next/link";const Lesbian = ({isContentWide}) => {
           name="description"
           content="Watch the hottest lesbian live cam shows on Stripchat! Enjoy nude lesbian cams with real-time action from stunning models. Join now for exclusive lesbian live cams!"
         ></meta>
-      </Helmet>
+      </Head>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=longhair" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

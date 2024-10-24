@@ -1,11 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head"; 
 import Link from "next/link";
 
 const BDSM = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>bondage naked women | Wettify</title>
         <meta property="title" content="bondage naked women | Wettify" />
         <meta property="og:title" content="bondage naked women | Wettify" />
@@ -17,7 +17,7 @@ const BDSM = ({isContentWide}) => {
           name="description"
           content="Discover the live bdsm cams shows with boundage teens on live cams. Join now to watch bdsm girls live, streaming just for you"
         ></meta>
-      </Helmet>
+      </Head>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=bdsm" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

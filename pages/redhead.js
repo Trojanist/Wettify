@@ -1,9 +1,9 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Link from "next/link";const Redhead = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>Hot redheads naked | Wettify</title>
         <meta property="title" content="Hot redheads naked | Wettify" />
         <meta property="og:title" content="Hot redheads naked | Wettify" />
@@ -15,7 +15,7 @@ import Link from "next/link";const Redhead = ({isContentWide}) => {
           name="description"
           content="Discover the hottest redhead cam shows with sexy naked redheads on live cams. Join now to watch stunning redhead camgirls live, streaming just for you"
         ></meta>
-      </Helmet>
+      </Head>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=redhead" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">

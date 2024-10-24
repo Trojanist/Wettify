@@ -1,9 +1,11 @@
 import React from "react";
-import Link from "next/link";import { Helmet } from "react-helmet";
+import Link from "next/link";
+import Head from "next/head";
+
 const Popular = ({ isContentWide }) => {
   return (
     <div className="PopularsCategory">
-      <Helmet>
+      <Head>
         <title>Hot redheads naked | Wettify</title>
         <meta property="title" content="Popular Cam Girls | Free Live Camgirls - Chat with Top Live Cam Girls | Wettify" />
         <meta property="og:title" content="Popular Cam Girls | Free Live Camgirls - Chat with Top Live Cam Girls | Wettify" />
@@ -15,7 +17,7 @@ const Popular = ({ isContentWide }) => {
           name="description"
           content="Discover the most popular cam girls on Wettify. Enjoy live chat with beautiful live cam girls for free. Explore top-rated free camgirls streaming in real-time. Join now!"
         ></meta>
-      </Helmet>
+      </Head>
       <div className={`CategoryContent ${isContentWide ? "Wide" : ""}`}>
         <iframe
           src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=redhead"

@@ -1,9 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Link from "next/link";const Mature = ({isContentWide}) => {
+import Head from "next/head";
+import Link from "next/link";
+
+const Mature = ({isContentWide}) => {
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>live sex mature | Wettify</title>
         <meta property="title" content="live sex mature | Wettify" />
         <meta property="og:title" content="live sex mature | Wettify" />
@@ -15,7 +17,7 @@ import Link from "next/link";const Mature = ({isContentWide}) => {
           name="description"
           content="Experience live sex with mature women on mature stripchat and Chaturbate. Enjoy real-time live mature cams featuring experienced, seductive cam models just for you!"
         ></meta>
-      </Helmet>
+      </Head>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
        <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=mature" className="rubateFeedIframe"></iframe>
         <p className="PageTextContent">
