@@ -25,7 +25,7 @@ const Asian = ({isContentWide}) => {
         ></meta>
       </Head>
       <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
-      <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=asian" className="rubateFeedIframe"></iframe>
+      <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=asian" className="rubateFeedIframe" style={{}}></iframe>
         <p className="PageTextContent">
           Welcome to the World of Asian Girls
           <br />

@@ -4,7 +4,9 @@ import Navbar from "../components/Navbar";
 import CategoriesBar from "../components/CategoriesBar";
 import "../styles/global.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
+import Script from "next/script";
+import CookieBanner from "../components/CookieBanner";
+import ReactGA from 'react-ga';
 function MyApp({ Component, pageProps }) {
 
   const [isCategoriesBarVisible, setCategoriesBarVisible] = useState(true);
@@ -27,6 +29,10 @@ function MyApp({ Component, pageProps }) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+
+    if (Cookies.get('userConsent') === 'true') {
+      ReactGA.initialize('G-V0JVFZKP0J');
+    }
   }, []);
 
   const toggleCategoriesBar = () => {
@@ -36,8 +42,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0JVFZKP0J" />
-        <script
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you" />
+      </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-V0JVFZKP0J" />
+        <Script 
           dangerouslySetInnerHTML={{
             __html: `
                 window.dataLayer = window.dataLayer || [];
@@ -47,12 +56,10 @@ function MyApp({ Component, pageProps }) {
             `,
           }}
         />
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Discover the hottest live cam girls online! Enjoy private chats or camgirls live shows with beautiful models ready to entertain you" />
-      </Head>
       <Navbar toggleCategoriesBar={toggleCategoriesBar} />
       <SpeedInsights />
       <CategoriesBar isVisible={isCategoriesBarVisible} />
+      <CookieBanner />
       <Component {...pageProps} isContentWide={!isCategoriesBarVisible} />
     </>
   );

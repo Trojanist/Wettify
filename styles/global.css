@@ -89,10 +89,44 @@ align-items: flex-end;
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .CategoryContent {
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  .CategoryContent.Wide {
+    margin-left: 10px;
+  }
+
+  .PageTextContent {
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .CategoryContent {
     width: 100%;
     margin-left: 20px;
+  }
+
+  .CategoryContent.Wide {
+    margin-left: 10px;
+  }
+
+  .PageTextContent {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .CategoryContent.Wide{
+    margin-left: -20px;
+  }
+  .rubateFeedIframe{
+    width: 110%;
+    margin-top: 1px;
+    margin-left: -15px;
   }
 
   .CategoryContent.Wide {

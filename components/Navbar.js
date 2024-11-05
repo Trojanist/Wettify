@@ -17,7 +17,7 @@ const Navbar = ({toggleCategoriesBar} ) => {
           </button>
          </div>
         <div className={styles.LogoBox}>
-          <Link href="/"><Image src={Logo} alt="wettify" unoptimized={true} /></Link>
+          <Link href="/"><Image src={Logo} alt="wettify" unoptimized={true} priority={true} /></Link>
         </div>
         <div className={styles.UpperNavbarRightSide}>
           <div className={styles.AdBanner}>

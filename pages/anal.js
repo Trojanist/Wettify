@@ -18,7 +18,7 @@ const Anal = ({isContentWide}) => {
         ></meta>
       </Head>
        <div className={`CategoryContent ${isContentWide ? 'Wide' : ''}`} >
-       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=anal" className="rubateFeedIframe"></iframe>
+       <iframe src="https://chaturbate.com/in/?tour=x1Rd&campaign=ccOiu&track=default&c=200&p=1&gender=f&tag=anal" className="rubateFeedIframe" style=".roomCard:display:none"></iframe>
         <p className="PageTextContent">
           
         </p>
