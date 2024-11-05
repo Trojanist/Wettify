@@ -15,7 +15,7 @@ const CategoriesBar = ({ isVisible }) => {
     } else {
       setIsSticky(false);
     }
-  }, 10), []); // Debounce scroll event
+  }, 10), []); 
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
