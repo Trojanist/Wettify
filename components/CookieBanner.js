@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 import styles from '../styles/CookiesPopup.module.css'
 import CookieLogo from '../public/cookie.webp'
 import Image from 'next/image';
+
 const CookieBanner = () => {
   const [cookies, setCookies] = useState(false);
 
@@ -14,10 +15,9 @@ const CookieBanner = () => {
   }, []);
 
   const acceptCookies = () => {
-    // Set a consent cookie if the user accepts
     Cookies.set('userConsent', 'true', { expires: 365 });
+    Cookies.set('refferal-link', 'https://chaturbate.com/in/?tour=LQps&campaign=ccOiu&track=default&room=wettify2024', {expires: 30})
     setCookies(false);
-    // Initialize Google Analytics or other tracking here
   };
 
   return (

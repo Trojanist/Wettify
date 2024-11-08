@@ -15,6 +15,7 @@
     "@mui/material": "^6.1.2",
     "@mui/styled-engine-sc": "^6.1.2",
     "@vercel/speed-insights": "^1.0.12",
+    "cookie": "^1.0.1",
     "debounce": "^2.1.1",
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
